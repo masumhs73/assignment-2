@@ -283,9 +283,29 @@ svg{
 .sponsor-info-description{
     font-size: 16px;
     font-weight: 400;
-    color: #727272;
+
 }
 
 .sponsors img{
     margin: 30px;
+    filter: grayscale(100%);
+}
+
+/*----------------------------------------------------
+              footer styles
+----------------------------------------------------*/
+
+footer{
+    height: 60px;
+    margin: 0 150px 50px 150px;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+}
+
+.footer-info{
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #424242;
 }
