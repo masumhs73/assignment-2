@@ -269,7 +269,7 @@ svg{
 }
 
 .latest-project-info{
-    margin: 0 150px 80px 150px;
+    margin: 0 150px 50px 150px;
 }
 
 .latest-project-title{
@@ -360,4 +360,76 @@ footer{
     font-weight: 400;
     font-size: 16px;
     color: #424242;
+}
+
+/*--------------------------------------------------------------------
+                       Responsive Layout
+------------------------------------------------------------------- */
+
+@media only screen and  (max-width: 576px){
+   
+    .container{
+        width: 100%;
+    }
+
+/*------------------- Header Responsive Layout---------------------- */
+
+    .header{
+        padding: 20px;
+    }
+
+    nav{
+        margin: 0 0 50px 0;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-title{
+        font-size: 20px;
+    }
+
+    .g3-architect img{
+        width: 300px;
+        height: 250px;
+    }
+
+    .g3-architect-title{
+        font-size: 30px;
+        margin: 0 10px;
+    }
+
+    .g3-architects-decsription{
+        margin: 30px;
+    }
+
+/*-------------------------Quick-features Responsive Layout------------------------*/
+
+    .quick-features{
+        margin: 0 20px;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .feature-images{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+    }
+
+    .feature-images img{
+        width: 160px;
+        height: 160px;
+    }
+
+    .quick-features-detailes{
+        padding: 0;
+    }
+    .feature-title{
+        /* margin-top: 20px; */
+    }
+
 }
