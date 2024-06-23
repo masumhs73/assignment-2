@@ -540,7 +540,10 @@ footer{
 
 .projects{
     grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 30px;
+    margin: 0 20px;
 }
+
 
 
 /*---------------------------Footer Responsive Layout------------------------*/
