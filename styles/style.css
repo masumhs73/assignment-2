@@ -82,6 +82,7 @@ header img {
 ------------------------------------------------------*/
 .container{
     margin-bottom: 130px;
+    width: 100%;
 }
 .quick-features{
     display: flex;
@@ -108,16 +109,31 @@ header img {
 
 .feature-title{
     font-size: 45px;
+    font-weight: 700;
 }
 
 .feature-details{
-    font-size: 16px;
-    margin-bottom: 30px;
+    font-size: 14px;
+    margin: 0 0 30px 0;
+    color: #727272;
+    line-height: 1.3;
+}
+
+.style-1{
+    color: #727272;
+}
+
+.style-2{
+    color: #FF900E;
 }
 
 /*-----------------------------------------------------
                       All Features Styles 
 ------------------------------------------------------*/
+
+.container-feature{
+    margin-bottom: 0;
+}
 
 .all-features{
     display: flex;
@@ -212,6 +228,9 @@ svg{
 /* ---------------------------------------------------------
                     Fact Section Styles
 --------------------------------------------------------- */
+.container-fact{
+    margin-bottom: 130px;
+}
 
 .fact{
     margin-left: 150px;
@@ -258,12 +277,13 @@ svg{
     font-size: 16px;
     font-weight: 600;
     color: #727272;
-    margin-top: 0;
+    margin: 0;
 }
 
 /* ------------------------------------------------------------
-                  Sponsor Section Styles
+                  Latest Project Section Styles
 -------------------------------------------------------------*/
+
 .latest-projects{
     margin: 0 80px;
 }
@@ -277,6 +297,7 @@ svg{
     font-weight: 700;
     font-size: 35px;
     color: #131313;
+    margin-top: 0;
 }
 
 .latest-project-details{
@@ -285,6 +306,7 @@ svg{
     font-size: 16px;
     color: #424242;
     line-height: 1.5;
+    margin: 0;
 }
 
 .projects{
@@ -292,10 +314,11 @@ svg{
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 40px;
     grid-row-gap: 50px;
+    justify-content: center;
 }
 
 .project img{
-    height: 350px;
+    width: 350px;
     height: 350px;
 }
 
@@ -322,19 +345,21 @@ svg{
     text-align: center;
 }
 
+.sponsor-info{
+    margin-bottom: 50px;
+}
+
 .sponsor-info-title{
     font-size: 35px;
     font-weight: 700;
     color: #131313;
-}
-
-.sponsor-info{
-    margin-bottom: 50px;
+    margin-top: 0;
 }
 
 .sponsor-info-description{
     font-size: 16px;
     font-weight: 400;
+    margin: 0;
 
 }
 
@@ -367,10 +392,6 @@ footer{
 ------------------------------------------------------------------- */
 
 @media only screen and  (max-width: 576px){
-   
-    .container{
-        width: 100%;
-    }
 
 /*------------------- Header Responsive Layout---------------------- */
 
@@ -410,7 +431,7 @@ footer{
     .quick-features{
         margin: 0 20px;
         flex-direction: column;
-        gap: 0;
+        gap: 20px;
     }
 
     .feature-images{
@@ -430,13 +451,21 @@ footer{
     }
     .feature-title{
         margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .quick-features-details button{
+        margin-bottom: 0;
     }
 
 /*-----------------All Feature Responsive Layout------------------- */
+.container-feature{
+    margin-bottom: 130px;
+}    
 
     .all-features{
         flex-direction: column-reverse;
-        margin: 20px;
+        margin: 0 20px 20px 20px;
         gap: 50px;
     }
 
@@ -460,17 +489,28 @@ footer{
 
 /*------------------------Some Fact Responsive------------------------------*/
 
+.container-fact{
+    margin-bottom: 230px;
+}
+
 .fact{
     margin: 0 20px;
 }
+
+.fact-title{
+    margin-top: 0;
+}
+
 .fact-info{
     margin-bottom: 40px;
+    margin-top: 0;
 }
 
 .fact-content{
     margin: 0 50px;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 20px;
+    grid-column-gap: 20px;
 }
 
 .content-box{
@@ -483,17 +523,34 @@ footer{
 
 .box-info{
     font-size: 14px;
+    
 }
 
 /*------------------------Latest Project Responsive--------------------------*/
 
 .latest-projects{
     margin: 0 20px;
-    padding-top: 100px;
 }
 
 .latest-project-info{
-    margin: 0 40px 50px 40px;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.projects{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+/*---------------------------Footer Responsive Layout------------------------*/
+
+footer{
+    margin: 0 40px 50px 40px ;
+}
+
+.footer-info{
+    padding-top: 10px;
+    font-size: 14px;
 }
 
 
