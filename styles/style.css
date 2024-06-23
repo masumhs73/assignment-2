@@ -381,10 +381,11 @@ footer{
 
 .footer-info{
     text-align: center;
-    padding-top: 20px;
+    padding: 20px;
     font-weight: 400;
     font-size: 16px;
     color: #424242;
+    margin: 0;
 }
 
 /*--------------------------------------------------------------------
@@ -545,11 +546,12 @@ footer{
 /*---------------------------Footer Responsive Layout------------------------*/
 
 footer{
-    margin: 0 40px 50px 40px ;
+    margin: 0 30px 50px 30px ;
 }
 
 .footer-info{
-    padding-top: 10px;
+    margin: 0;
+    padding: 15px;
     font-size: 14px;
 }
 
