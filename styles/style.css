@@ -407,10 +407,15 @@ footer{
     nav ul{
         display: flex;
         flex-direction: column;
+        gap: 5px;
+    }
+
+    nav li{
+        font-size: 16px;
     }
 
     .nav-title{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .g3-architect img{
